@@ -54,7 +54,7 @@ struct Model {
 struct Plane : Model {
     Buffer vert, tex;
     Plane():Model({"in_Quad", "in_Tex"}),
-    vert({-1.0f,  1.0f,  0.0f, -1.0f, -1.0f,  0.0f,  1.0f,  1.0f,  0.0f,  1.0f, -1.0f,  0.0f}),
+    vert({-1.0f,  -1.0f,  0.0f, -1.0f, 1.0f,  0.0f,  1.0f,  -1.0f,  0.0f,  1.0f, 1.0f,  0.0f}),
     tex({ 0.0f,  0.0f,  0.0f,  1.0f,  1.0f,  0.0f,  1.0f,  1.0f}){
         bind<glm::vec3>("in_Quad", &vert);
         bind<glm::vec2>("in_Tex", &tex);
