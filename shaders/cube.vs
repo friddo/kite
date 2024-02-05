@@ -3,7 +3,6 @@ in vec3 in_Quad;
 in vec2 in_Tex;
 out vec2 ex_Tex;
 
-//Position the Billboard in space!
 uniform mat4 model;
 uniform mat4 projection;
 
